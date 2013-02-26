@@ -61,6 +61,9 @@ nmap ,l :set list!<CR>
 " Run file with Ruby interpreter
 :autocmd FileType ruby noremap <C-M> :w!<CR>:!ruby %<CR>
 
+" Run PHPUnit tests in current dir
+:map <Leader>t :Test<CR>
+
 " -----------------------------------------------------------------------------
 "  Tabs setup
 " -----------------------------------------------------------------------------
