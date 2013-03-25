@@ -48,15 +48,15 @@ endif
 " System clipboard paste
 inoremap <S-Insert> <ESC>"+p`]a
 
-" -----------------------------------------------------------------------------
-" Personal setup 
-" -----------------------------------------------------------------------------
-
-hi link phpIdentifier phpVarSelector
-
 " toggle hidden characters
 
 nmap ,l :set list!<CR>
+
+" -----------------------------------------------------------------------------
+" PHP settings 
+" -----------------------------------------------------------------------------
+
+:hi link phpIdentifier phpVarSelector
 
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
@@ -64,11 +64,15 @@ nmap ,l :set list!<CR>
 " run file with PHP CLI (CTRL-M)
 :autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 
-" Run file with Ruby interpreter
-:autocmd FileType ruby noremap <C-M> :w!<CR>:!ruby %<CR>
-
 " Run PHPUnit tests in current dir
 :map <Leader>t :Test<CR>
+
+" -----------------------------------------------------------------------------
+" Ruby settings 
+" -----------------------------------------------------------------------------
+
+" Run file with Ruby interpreter
+:autocmd FileType ruby noremap <C-M> :w!<CR>:!ruby %<CR>
 
 " -----------------------------------------------------------------------------
 "  Tabs and indent setup
@@ -133,10 +137,19 @@ Bundle "garbas/vim-snipmate"
 
 Bundle "scrooloose/nerdcommenter"
 Bundle 'joonty/vim-phpunitqf.git'
+Bundle 'stephpy/vim-phpdoc'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/gundo.vim'
 
 " Bundles settings ############################################################
+
+" -----------------------------------------------------------------------------
+" Vim-phpdoc settings
+" -----------------------------------------------------------------------------
+let g:pdv_cfg_Author = "Źmicier Hryškievič <volny.licvin@gmail.com>"
+noremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR> 
 
 " -----------------------------------------------------------------------------
 " Gundo settings
