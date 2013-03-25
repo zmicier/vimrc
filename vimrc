@@ -65,14 +65,13 @@ nmap ,l :set list!<CR>
 :map <Leader>t :Test<CR>
 
 " -----------------------------------------------------------------------------
-"  Tabs setup
+"  Tabs and indent setup
 " -----------------------------------------------------------------------------
 :set expandtab
 :set textwidth=80
 :set tabstop=4
 :set softtabstop=4
 :set shiftwidth=4
-:set background=dark
 :syntax on
 :set tags=$HOME/.vim/doc/tags
 :set ttyfast
@@ -91,11 +90,14 @@ nmap ,l :set list!<CR>
 " Colors settings 
 " -----------------------------------------------------------------------------
 :set t_Co=256
-:set colorcolumn=80
-:hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+:set background=dark
+
 :colorscheme symfony 
 
-    
+:set colorcolumn=80
+:hi ColorColumn ctermbg=88 guibg=#870000
+:hi LineNr term=bold cterm=NONE ctermfg=25 ctermbg=NONE gui=NONE guifg=#005faf guibg=NONE
+
 " -----------------------------------------------------------------------------
 "  Vundle settings
 " -----------------------------------------------------------------------------
@@ -126,6 +128,11 @@ Bundle "garbas/vim-snipmate"
 Bundle "scrooloose/nerdcommenter"
 Bundle 'joonty/vim-phpunitqf.git'
 Bundle 'airblade/vim-gitgutter'
+
+" -----------------------------------------------------------------------------
+" GitGutter settings
+" -----------------------------------------------------------------------------
+:hi SignColumn ctermbg=235 guibg=#222222
 
 " -----------------------------------------------------------------------------
 " Powerline settings
