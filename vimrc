@@ -128,6 +128,14 @@ Bundle "garbas/vim-snipmate"
 Bundle "scrooloose/nerdcommenter"
 Bundle 'joonty/vim-phpunitqf.git'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'sjl/gundo.vim'
+
+" Bundles settings ############################################################
+
+" -----------------------------------------------------------------------------
+" Gundo settings
+" -----------------------------------------------------------------------------
+nnoremap <F5> :GundoToggle<CR>
 
 " -----------------------------------------------------------------------------
 " GitGutter settings
