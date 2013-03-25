@@ -41,6 +41,8 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " Pasting toggle...
 :set pastetoggle=<Ins>
+" System clipboard paste
+inoremap <S-Insert> <ESC>"+p`]a
 
 " -----------------------------------------------------------------------------
 " Personal setup 
