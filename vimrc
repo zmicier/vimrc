@@ -29,6 +29,10 @@ nnoremap k gk
 
 " Load vimrc in new tab with leader-v
 nmap <leader>v :tabedit $MYVIMRC<CR>
+" Auto-reload vimrc on save
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 " "Hidden" buffers -- i.e., don't require saving before editing another file.
 " Calling quit will prompt you to save unsaved buffers anyways.
