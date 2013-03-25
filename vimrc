@@ -116,6 +116,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'html5.vim'
 Bundle 'tristen/vim-sparkup'
+
 " Snipmate with deps
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
@@ -124,6 +125,7 @@ Bundle "garbas/vim-snipmate"
 
 Bundle "scrooloose/nerdcommenter"
 Bundle 'joonty/vim-phpunitqf.git'
+Bundle 'airblade/vim-gitgutter'
 
 " -----------------------------------------------------------------------------
 " Powerline settings
