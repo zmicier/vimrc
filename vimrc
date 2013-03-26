@@ -67,6 +67,13 @@ nmap ,l :set list!<CR>
 " Run PHPUnit tests in current dir
 :map <Leader>t :Test<CR>
 
+" PHP syntax settings
+:let php_sql_query=1
+:let php_htmlInStrings=1
+:let php_folding=1
+:let php_parent_error_close=1
+:let php_parent_error_open=1
+
 " -----------------------------------------------------------------------------
 " Ruby settings 
 " -----------------------------------------------------------------------------
