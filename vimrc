@@ -149,6 +149,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/gundo.vim'
 Bundle 'vim-scripts/vimwiki'
 Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'vim-scripts/comments.vim'
 
 " Bundles settings ############################################################
 
