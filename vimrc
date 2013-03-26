@@ -147,8 +147,15 @@ Bundle 'joonty/vim-phpunitqf.git'
 Bundle 'stephpy/vim-phpdoc'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/gundo.vim'
+Bundle 'vim-scripts/vimwiki'
 
 " Bundles settings ############################################################
+
+" -----------------------------------------------------------------------------
+" Vimwiki settings
+" -----------------------------------------------------------------------------
+:let g:vimwiki_list = [{'path': '~/vimwiki/'}]
+
 
 " -----------------------------------------------------------------------------
 " Vim-phpdoc settings
