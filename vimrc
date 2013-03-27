@@ -150,6 +150,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'vim-scripts/vimwiki'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'vim-scripts/comments.vim'
+Bundle 'corntrace/bufexplorer'
 
 " Bundles settings ############################################################
 
@@ -166,7 +167,7 @@ let g:php_cs_fixer_dry_run = 0                  " Call command with dry-run opti
 let g:php_cs_fixer_verbose = 0                  " Return the output of command if 1, else an inline information.
 
 nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
-nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>:edit<CR>
 
 " -----------------------------------------------------------------------------
 " Vimwiki settings
