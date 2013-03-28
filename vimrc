@@ -151,8 +151,14 @@ Bundle 'vim-scripts/vimwiki'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'vim-scripts/comments.vim'
 Bundle 'corntrace/bufexplorer'
+Bundle 'kien/ctrlp.vim'
 
 " Bundles settings ############################################################
+
+" -----------------------------------------------------------------------------
+" CtrlP settings
+" -----------------------------------------------------------------------------
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " -----------------------------------------------------------------------------
 " Vim-php-cs-fixer settings
