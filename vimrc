@@ -152,28 +152,20 @@ Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'vim-scripts/comments.vim'
 Bundle 'corntrace/bufexplorer'
 Bundle 'kien/ctrlp.vim'
-Bundle 'taglist.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'techlivezheng/tagbar-phpctags'
 
 " Bundles settings ############################################################
 
 " -----------------------------------------------------------------------------
-" Taglist settings
+" Tagbar-phpctags settings
 " -----------------------------------------------------------------------------
+let g:tagbar_phpctags_bin='~/lib//vendor/bin/phpctags'
 
-" set the names of flags
-let tlist_php_settings = 'php;c:class;f:function;d:constant'
-" close all folds except for current file
-let Tlist_File_Fold_Auto_Close = 1
-" make tlist pane active when opened
-let Tlist_GainFocus_On_ToggleOpen = 1
-" width of window
-let Tlist_WinWidth = 40
-" close tlist when a selection is made
-let Tlist_Close_On_Select = 1
-" tlist window on right side 
-let Tlist_Use_Right_Window   = 1
-" key for tlist window
-nnoremap <F6> :TlistToggle<CR>
+" -----------------------------------------------------------------------------
+" Tagbar settings
+" -----------------------------------------------------------------------------
+nmap <F8> :TagbarToggle<CR>
 
 " -----------------------------------------------------------------------------
 " CtrlP settings
