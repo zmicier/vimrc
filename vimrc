@@ -74,6 +74,10 @@ nmap ,l :set list!<CR>
 :let php_parent_error_close=1
 :let php_parent_error_open=1
 
+" Tags per project settings
+:set tags=./tags,tags,./.tags/projecttags;
+map <F9> :!ctags -f ./.tags/projecttags -R `pwd`<CR>
+
 " -----------------------------------------------------------------------------
 " Ruby settings 
 " -----------------------------------------------------------------------------
@@ -90,7 +94,6 @@ nmap ,l :set list!<CR>
 :set softtabstop=4
 :set shiftwidth=4
 :syntax on
-:set tags=$HOME/.vim/doc/tags
 :set ttyfast
 :set showcmd
 :set showmode
