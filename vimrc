@@ -154,6 +154,7 @@ Bundle 'corntrace/bufexplorer'
 Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'techlivezheng/tagbar-phpctags'
+Bundle "ervandew/supertab"
 
 " Bundles settings ############################################################
 
@@ -192,7 +193,6 @@ nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>:edit<CR>
 " -----------------------------------------------------------------------------
 :let g:vimwiki_list = [{'path': '~/vimwiki/'}]
 
-
 " -----------------------------------------------------------------------------
 " Vim-phpdoc settings
 " -----------------------------------------------------------------------------
@@ -217,6 +217,12 @@ nnoremap <F5> :GundoToggle<CR>
 set laststatus=2   " Always show the statusline
 "let g:Powerline_symbols = 'fancy'
 set term=xterm-256color
+
+" -----------------------------------------------------------------------------
+" Vim-snippets settings
+" -----------------------------------------------------------------------------
+let g:snips_author = "Źmicier Hryškievič <volny.licvin@gmail.com>"
+let g:snippets_dir = $HOME . "/.vim/snippets/"
 
 " -----------------------------------------------------------------------------
 " NERDTree settings
