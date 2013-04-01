@@ -1,4 +1,5 @@
 bundle
+sessions
 data
 *.swp
 vimrc_old

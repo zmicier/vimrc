@@ -158,8 +158,15 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'techlivezheng/tagbar-phpctags'
 Bundle "ervandew/supertab"
+Bundle "xolox/vim-session"
 
 " Bundles settings ############################################################
+
+" -----------------------------------------------------------------------------
+" Vim-session settings
+" -----------------------------------------------------------------------------
+let g:session_autosave = 1
+let g:session_autoload = 1
 
 " -----------------------------------------------------------------------------
 " Tagbar-phpctags settings
@@ -170,6 +177,8 @@ let g:tagbar_phpctags_bin='~/lib//vendor/bin/phpctags'
 " Tagbar settings
 " -----------------------------------------------------------------------------
 nmap <F8> :TagbarToggle<CR>
+let g:tagbar_sort = 0
+let g:tagbar_foldlevel = 1
 
 " -----------------------------------------------------------------------------
 " CtrlP settings
