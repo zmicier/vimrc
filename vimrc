@@ -171,7 +171,7 @@ let g:session_autoload = 1
 " -----------------------------------------------------------------------------
 " Tagbar-phpctags settings
 " -----------------------------------------------------------------------------
-let g:tagbar_phpctags_bin='~/lib//vendor/bin/phpctags'
+let g:tagbar_phpctags_bin='~/lib/vendor/bin/phpctags'
 
 " -----------------------------------------------------------------------------
 " Tagbar settings
